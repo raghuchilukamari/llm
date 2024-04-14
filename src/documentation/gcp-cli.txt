@@ -1,0 +1,16 @@
+# list down all projects in org:
+    gcloud projects list
+
+# switch to a specific project
+    gcloud config set project {project-id}
+
+# set App Default creds(ADC)
+    gcloud auth application-default login
+    Credentials saved to file: [~/.config/gcloud/application_default_credentials.json]
+
+# update ADC
+    gcloud auth application-default set-quota-project {project-id}
+
+# List down all endpoints (requires enabling API : aiplatform.googleapis.com)
+    gcloud ai endpoints list \
+        --region=us-west1

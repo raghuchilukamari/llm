@@ -1,0 +1,96 @@
+Popular proprietary LLms
+-----------------------------
+    GPT-3.5
+        Language model
+        4k and 16k context lengths
+    GPT-4
+        Multimodal
+        8k and 32k context lengths
+    Claude - Anthropic
+        Claude 2, is an LLM with a context size of 100k tokens
+        US or UK
+    Cohere - Generative and Embeddings
+        - calls are rate-limited to 100 calls per minute
+         * for dialogue-like interactions - Command
+         * Generation base for generative tasks
+         * Summarize - summarize-xlarge
+
+    PaLM - Google
+        chatbots, text summarization, question-answering systems, and document search through its text embedding service.
+
+Opensource LLms
+-----------------------------
+
+LLaMA 2 - Meta
+    7B, 13B, and 70B
+
+Falcon - Technology Innovation Institute (TII) of Abu Dhabi
+    decoder-only, excel in predicting the next token
+    chats - tiiuae/falcon-7b-instruct
+    Falcon-40B
+
+Dolly - Databricks
+    high-quality instructions
+    databricks-dolly-15k
+    databricks/dolly-v2-3b
+
+Mistral
+    Mistral 7B can be easily fine-tuned for any task
+    Mistral 7B Instruct outperforms all 7B models
+
+------------------------------------------------------
+
+Play with parameters
+    temperature
+    frequency penalty - encourages the model to use repeated tokens more conservatively
+    presence penalty - higher value increases the likelihood of generating tokens not yet included in the generated text.
+    top-p
+Prompt Engineering
+RAG
+Constitutional AI - Framework to better align your AI your values to make it trustworthy and safe - RFAIF
+stay update with latest research and publications
+
+------------------------------------------------------
+
+encoder - decoder : Seq2Seq Model for translation, summarization
+encoder only : similarity, classification, sentiment analysis
+decoder only : predict next token - concept of prompting
+    - GPT-4 and LLaMA 2 exhibit the ability to perform tasks such as classification, summarization, translation, etc., by leveraging the appropriate prompt.
+
+
+ Greedy-decoding
+ top-k sampling
+ Nucleus sampling
+ Beam search
+
+
+ --------------------------------------------------------
+
+Fine Tuning  - Adjust all parameters in training a pretrained LM to adapt to a specific problem
+             - requires computational power - rarely used
+
+Low-Rank Adaption - By Microsoft researchers
+            - Adapt to specific task by reducing computational resources
+            - Significantly reduces number of params to train by applying low rank approximations to layers
+            - Low GPU
+            - QLoRA
+
+            Supervised Fine Tuning -
+                doing standard fine tuning on pretrained LLM with a smaller data
+                still computationally intensive
+            RLHF -
+            - Trained to follow human feedback over iterations
+
+ Paramter Efficient fine Tuning (PEFT) - HuggingFace
+            - Freezes most of pretrained params and fine-tunes only small number of additional params
+            - outperform SFT
+            - tiny checkpoints, less storage (highly portable)
+            - supports LoRA and Prompt Tuning
+
+ PEFT Library - LoRA, Prefix Tuning, P-Tuning, QLoRA
+ Lit-GPT - Vicuna, Pythia, Falcon
+
+ QLoRA - Guanaco models use QLoRA
+ BitsAndBytes offers 4bit quantization
+
+
