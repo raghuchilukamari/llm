@@ -34,3 +34,5 @@ google-cloud-documentai
 langserve
 fastapi
 uvicorn
+langchain-openai
+scikit-learn

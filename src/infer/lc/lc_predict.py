@@ -1,10 +1,6 @@
-from langchain_google_vertexai import VertexAIModelGarden
-import vertexai
-from langchain_core.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain_google_vertexai import VertexAI
-from prompt_templates import *
-from langchain_community.callbacks import get_openai_callback
+from src.utils.prompt_templates import *
 import logging
 
 LOG = logging.getLogger(__name__)
