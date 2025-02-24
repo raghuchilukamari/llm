@@ -1,0 +1,7 @@
+fastapi
+unvicorn
+llamaindex
+psycopg[pool]
+psycopg[binary]
+
+

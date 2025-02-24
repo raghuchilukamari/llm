@@ -73,8 +73,8 @@ class LLMTuner():
     def tune(self):
         trainer = self.training_func()
         LOG.info(trainer.model.print_trainable_parameters())
-        return trainer
-        # trainer.train()
+        #return trainer
+        trainer.train()
 
 
 if __name__ == "__main__":

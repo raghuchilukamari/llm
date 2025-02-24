@@ -62,7 +62,7 @@ class LoadTrainConfig():
             # PyTorch 2.0 specifics
             bf16=bf16_flag,  # bfloat16 training
             torch_compile=True,  # optimizations
-            optim="adamw_torch_fused",  # improved optimizer
+            optim="adamw_torch",  # improved optimizer
             # logging & evaluation strategies
             logging_dir=f"{repo_id}/logs",
             logging_strategy="steps",
